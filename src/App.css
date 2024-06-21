@@ -44,7 +44,7 @@ body {
   padding-top: 0%;
   padding-left: 85px;
   padding-bottom: 85px;
-  padding-right: 85px;
+  padding-right: 13.33%;
   margin: auto;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .left-column {
-  width: 33%;
+  width: 43%;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
@@ -157,21 +157,18 @@ body {
 }
 
 h2 {
-  font-size: 36px;
-  font-weight: 500;
-  color: #00263e;
-  margin-bottom: 18px;
-  letter-spacing: 0;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-  line-height: 48px
+  color: #00263E; /* Change color to match second h2 */
+  font-size: 30px; /* Change font size to match second h2 */
+  font-family: Roboto, Helvetica, Arial, sans-serif; /* Ensure the font family matches */
+  margin: 0px 0px 18px; /* Adjust margin to match second h2 if needed */
 }
+
 
 .column h3 {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   color: #00263e;
-  margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   line-height: 28px;
 }
 
@@ -183,10 +180,9 @@ h2 {
 }
 
 .px-gap {
-  padding: 1rem;
   margin-left: 16.66%;
   margin-right: 16.66%;
-  padding-bottom: 80px;
+
 }
 
 .whitespace-pre-wrap {
@@ -200,6 +196,27 @@ h2 {
 }
 
 .font-bold{
-  font-weight: 700;
+  font-weight: bold;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.py-1 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.hr {
+  width: 100%; /* Make the hr element full width */
+  border-bottom-width: 2px; /* Ensure the border thickness is set */
+  border-color: #d3d3d3; /* Adjust the border color to match border-gray-light */
+  display: block; /* Ensure it is displayed as a block element */
+  margin: 0; /* Remove any margins */
+}

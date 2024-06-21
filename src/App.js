@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 import truckImage from './assets/truck-image.jpg'; // Save your truck image in the src/assets folder
-// import roiStatImage from './assets/roi-stat.jpg'; // Removed import for ROI stat image
+import facebookIcon from './assets/facebook.svg';
+import twitterIcon from './assets/twitter.svg';
+import linkedinIcon from './assets/linkedin.svg';
+import EmailIcon from './assets/email.svg';
 
 const App = () => {
   return (
@@ -51,13 +54,14 @@ const App = () => {
               <span className="text-blue">35,000</span> TRACTORS &amp; TRAILERS
             </span>
             <br />
+            <br/>
           </span>
           <hr className="hr border-b-1 w-full block border-gray-light mx-auto" />
           <p></p>
         </div>
         <div className="column right-column">
           <p className="p--xs-eyebrow text-base tracking-wide font-bold text-blue">
-            <span className="text-blue mb-0 py-1 md:pt-0" style={{ fontSize: '16px', fontWeight: 'bold' }}>The Challenge</span>
+            <span className="text-blue mb-0 py-1 md:pt-0" style={{ fontSize: '16px', fontWeight: 'bold'}}>THE CHALLENGES</span>
           </p>
           <h3>Inconvenience and geographical limitations with in-person property auctions</h3>
           <p>Bidding in in-person property auctions can be difficult. They require bidders to travel to the auction site, which limits accessibility. The fixed timing can conflict with personal schedules, making it hard for everyone to attend. Additionally, the high-pressure environment can be intimidating and lead to rushed decisions.</p>
@@ -84,9 +88,32 @@ const App = () => {
           <p>XPO has also implemented Samsara workflows to increase driver efficiency. "Samsara workflows and dashboards have given us more visibility, so we can track miles even more efficiently, and coach drivers even more effectively." In addition, Samsara has enabled XPO to switch from paper inspection forms to eDVIRs, <strong>saving thousands of hours per year</strong>. "Saving one minute on filling out an inspection form may not seem significant, but when you multiply that by three million trips per year, it's a huge amount," said Bean.</p>
           <p>Moreover, with the Samsara platform, XPO has been able to plug Samsara data into their network through their line haul models and other proprietary software, helping to drive additional efficiencies. One example is time savings on labor: "We estimate <strong>we're saving thousands of hours in technician labor</strong> by setting up an integration with Samsara and AssetWorks," said Bean. "It removes manual parts of tracking and streamlines maintenance for our technicians."&nbsp;</p>
           <p>Looking forward, XPO plans to continue their rollout of Samara across their operations. "We have a whole list of initiatives we're working on, and we’re excited to make them a reality," said Gardner. "We expected to see improvements and gains with Samsara, and we're pleased that that's exactly what we've gotten."</p>
+          <br />
+          <hr className="hr w-full block border-b-2 border-gray-light ml-0 mr-auto" />
+          <br />
+
+          <div className="columns-wrapper">
+          <div className="column share-label">
+        <strong className="share-text">Share this story</strong>
+      </div>
+      <div className="column share-icons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.samsara.com/customers/logistics-warehouse" target="_blank" rel="noopener noreferrer">
+          <img src={facebookIcon} alt="Facebook" width="28" height="28" />
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://www.samsara.com/products/platform&text=Check this out&via=Samsara" target="_blank" rel="noopener noreferrer">
+          <img src={twitterIcon} alt="Twitter" width="28" height="28" />
+        </a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.samsara.com/products/platform" target="_blank" rel="noopener noreferrer">
+          <img src={linkedinIcon} alt="LinkedIn" width="28" height="28" />
+        </a>
+        <a href="mailto:?body=https://www.samsara.com/products/platform&subject=Check this out" target="_blank" rel="noopener noreferrer">
+          <img src={EmailIcon} alt="Email" width="28" height="28" />
+        </a>
+      </div>
+      </div>
         </div>
       </div>
-
+      
     </section>
   );
 }
