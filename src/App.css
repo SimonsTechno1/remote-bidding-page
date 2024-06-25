@@ -220,3 +220,8 @@ h2 {
   display: block; /* Ensure it is displayed as a block element */
   margin: 0; /* Remove any margins */
 }
+
+img {
+  padding: 5px;
+}
+
